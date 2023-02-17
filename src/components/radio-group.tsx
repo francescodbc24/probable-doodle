@@ -1,16 +1,15 @@
 import React, { FunctionComponent } from "react";
 import Radio, { IRadioTheme } from "./radio";
 
-type IDirection = "horizontal" | "vertical";
+export type IDirection = "horizontal" | "vertical";
 
-type IRadioOptions = {
+export type IRadioOptions = {
   label: string;
   value: string;
-  [key: string]: string;
 };
 interface RadioGroupProps {
   name: string;
-  selectdValue?: string | number | boolean;
+  selectedValue?: string | number | boolean;
   options: IRadioOptions[];
   direction?: IDirection;
   theme?: IRadioTheme;
@@ -28,7 +27,7 @@ const radio_theme: IRadioTheme = {
 
 const RadioGroup: FunctionComponent<RadioGroupProps> = ({
   name,
-  selectdValue,
+  selectedValue,
   options,
   direction,
   onChange,
@@ -54,7 +53,7 @@ const RadioGroup: FunctionComponent<RadioGroupProps> = ({
           name={name}
           label={radio.label}
           value={radio.value}
-          checked={selectdValue && radio.value == selectdValue ? true : false}
+          checked={selectedValue && radio.value == selectedValue ? true : false}
           onChange={handleChangeRadio}
           theme={theme ? theme : radio_theme}
         />

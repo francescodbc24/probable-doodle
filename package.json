@@ -1,13 +1,13 @@
 {
   "name": "react-radio-ts",
-  "version": "0.0.10",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/francescodbc24/react-radio-package.git"
+    "url": "git+https://github.com/francescodbc24/react-radio-ts.git"
   },
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
