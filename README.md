@@ -3,7 +3,7 @@
 
 React radio.
 
-[**Live Demo**](https://francescodbc24.github.io/react-radio-package/)
+[**Live Demo**](https://francescodbc24.github.io/react-radio-ts/)
 
 ## Installation:
 
